@@ -1,0 +1,22 @@
+
+/*
+	======================================================================
+	
+	Outlook Get Info from Selected MailItem
+	
+	by Casper Harkin - 27/09/2022
+	======================================================================
+*/
+
+			Application := ComObjActive("Outlook.Application")	
+			ActiveExplorer := Application.ActiveExplorer 
+			ActiveSelection := ActiveExplorer.Selection 
+		
+			SenderName := ActiveSelection.Item(1).SenderName
+			To := ActiveSelection.Item(1).to
+			Subject := ActiveSelection.Item(1).Subject
+			Body := ActiveSelection.Item(1).Body
+		
+			MsgBox % "Sender: " SenderName "`nTo: " To "`nSubject: " Subject "`nBody: " Body
+		
+			Exit ; End of AES
