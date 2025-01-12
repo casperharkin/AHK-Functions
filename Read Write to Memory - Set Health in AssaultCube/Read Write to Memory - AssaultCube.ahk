@@ -6,6 +6,7 @@
 
 /*
     Based on comments by YMP2 - https://www.autohotkey.com/boards/viewtopic.php?style=7&t=54657
+    Game download - https://assault.cubers.net/download.html
 
     An AutoHotkey script designed to interact with the memory 
     of a game (e.g., AssaultCube) to manipulate player health. This script allows users 
